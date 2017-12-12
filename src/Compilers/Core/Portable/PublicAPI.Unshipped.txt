@@ -487,6 +487,7 @@ Microsoft.CodeAnalysis.Operations.UnaryOperatorKind.None = 0 -> Microsoft.CodeAn
 Microsoft.CodeAnalysis.Operations.UnaryOperatorKind.Not = 2 -> Microsoft.CodeAnalysis.Operations.UnaryOperatorKind
 Microsoft.CodeAnalysis.Operations.UnaryOperatorKind.Plus = 3 -> Microsoft.CodeAnalysis.Operations.UnaryOperatorKind
 Microsoft.CodeAnalysis.Operations.UnaryOperatorKind.True = 5 -> Microsoft.CodeAnalysis.Operations.UnaryOperatorKind
+Microsoft.CodeAnalysis.Platform.Arm64 = 6 -> Microsoft.CodeAnalysis.Platform
 Microsoft.CodeAnalysis.RefKind.In = 3 -> Microsoft.CodeAnalysis.RefKind
 Microsoft.CodeAnalysis.RefKind.RefReadOnly = 3 -> Microsoft.CodeAnalysis.RefKind
 Microsoft.CodeAnalysis.SemanticModel.GetOperation(Microsoft.CodeAnalysis.SyntaxNode node, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> Microsoft.CodeAnalysis.IOperation
@@ -504,6 +505,7 @@ abstract Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext.R
 abstract Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext.RegisterOperationBlockEndAction(System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext> action) -> void
 abstract Microsoft.CodeAnalysis.SemanticModel.GetOperationCore(Microsoft.CodeAnalysis.SyntaxNode node, System.Threading.CancellationToken cancellationToken) -> Microsoft.CodeAnalysis.IOperation
 abstract Microsoft.CodeAnalysis.SemanticModel.RootCore.get -> Microsoft.CodeAnalysis.SyntaxNode
+const Microsoft.CodeAnalysis.WellKnownMemberNames.DeconstructMethodName = "Deconstruct" -> string
 override Microsoft.CodeAnalysis.Operations.OperationWalker.DefaultVisit(Microsoft.CodeAnalysis.IOperation operation) -> void
 override Microsoft.CodeAnalysis.Operations.OperationWalker.Visit(Microsoft.CodeAnalysis.IOperation operation) -> void
 override Microsoft.CodeAnalysis.Optional<T>.ToString() -> string
@@ -707,4 +709,3 @@ virtual Microsoft.CodeAnalysis.Operations.OperationVisitor<TArgument, TResult>.V
 virtual Microsoft.CodeAnalysis.Operations.OperationVisitor<TArgument, TResult>.VisitVariableDeclarator(Microsoft.CodeAnalysis.Operations.IVariableDeclaratorOperation operation, TArgument argument) -> TResult
 virtual Microsoft.CodeAnalysis.Operations.OperationVisitor<TArgument, TResult>.VisitVariableInitializer(Microsoft.CodeAnalysis.Operations.IVariableInitializerOperation operation, TArgument argument) -> TResult
 virtual Microsoft.CodeAnalysis.Operations.OperationVisitor<TArgument, TResult>.VisitWhileLoop(Microsoft.CodeAnalysis.Operations.IWhileLoopOperation operation, TArgument argument) -> TResult
-const Microsoft.CodeAnalysis.WellKnownMemberNames.DeconstructMethodName = "Deconstruct" -> string
